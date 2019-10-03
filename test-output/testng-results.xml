@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59566" started-at="2019-10-03T12:31:25Z" finished-at="2019-10-03T12:32:24Z">
+  <suite name="Suite" duration-ms="70942" started-at="2019-10-03T14:22:20Z" finished-at="2019-10-03T14:23:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59566" started-at="2019-10-03T12:31:25Z" finished-at="2019-10-03T12:32:24Z">
+    <test name="Test" duration-ms="70942" started-at="2019-10-03T14:22:20Z" finished-at="2019-10-03T14:23:31Z">
       <class name="org.atmecs.website.testscripts.Home">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="startReport" is-config="true" duration-ms="392" started-at="2019-10-03T12:31:24Z" finished-at="2019-10-03T12:31:25Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="startReport" is-config="true" duration-ms="276" started-at="2019-10-03T14:22:20Z" finished-at="2019-10-03T14:22:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="baseSetup()[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="baseSetup" is-config="true" duration-ms="15923" started-at="2019-10-03T12:31:25Z" finished-at="2019-10-03T12:31:41Z">
+        <test-method status="PASS" signature="baseSetup()[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="baseSetup" is-config="true" duration-ms="25435" started-at="2019-10-03T14:22:20Z" finished-at="2019-10-03T14:22:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseSetup -->
-        <test-method status="PASS" signature="homeValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="homeValidation" duration-ms="41844" started-at="2019-10-03T12:31:42Z" data-provider="breadcrumbdata" finished-at="2019-10-03T12:32:24Z">
+        <test-method status="PASS" signature="homeValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="homeValidation" duration-ms="44088" started-at="2019-10-03T14:22:46Z" data-provider="breadcrumbdata" finished-at="2019-10-03T14:23:30Z">
           <params>
             <param index="0">
               <value>
@@ -86,7 +86,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeValidation -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="486" started-at="2019-10-03T12:32:24Z" finished-at="2019-10-03T12:32:24Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="443" started-at="2019-10-03T14:23:30Z" finished-at="2019-10-03T14:23:31Z">
           <params>
             <param index="0">
               <value>
@@ -97,11 +97,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="endReport" is-config="true" duration-ms="1540" started-at="2019-10-03T12:32:24Z" finished-at="2019-10-03T12:32:26Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:org.atmecs.website.testscripts.Home@4dfa3a9d]" name="endReport" is-config="true" duration-ms="1374" started-at="2019-10-03T14:23:31Z" finished-at="2019-10-03T14:23:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- org.atmecs.website.testscripts.Home -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

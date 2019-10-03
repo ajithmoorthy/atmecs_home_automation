@@ -1110,3 +1110,75 @@
 2019-10-03 18:02:26 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ajith.periyasamy/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
 2019-10-03 18:03:48 INFO  LogReporter:18 - url is loaded
 2019-10-03 18:03:54 INFO  LogReporter:18 - Document title is validated :Home | Atmecs, Inc. | Digital Solutions & Product Engineering Services
+2019-10-03 18:05:14 INFO  LogReporter:18 - url is loaded
+2019-10-03 18:05:21 INFO  LogReporter:18 - Document title is validated :Home | Atmecs, Inc. | Digital Solutions & Product Engineering Services
+2019-10-03 18:05:26 INFO  LogReporter:18 - Document title is validated :Services | Atmecs, Inc. | Digital Solutions & Product Engineering Services
+2019-10-03 18:05:27 INFO  LogReporter:18 - Actual Value :Home › Services and Expected :Home › Services is validated succesfully
+2019-10-03 18:05:33 INFO  LogReporter:18 - Document title is validated :Artificial Intelligence/Machine Learing | Leap at the possibilities of AI/ML
+2019-10-03 18:05:33 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Artificial Intelligence / Machine Learning and Expected :Home › Services › Digital Life › Artificial Intelligence / Machine Learning is validated succesfully
+2019-10-03 18:05:38 INFO  LogReporter:18 - Document title is validated :Mixed Reality | We engineer the technology. You achieve the unreal.
+2019-10-03 18:05:38 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Augmented Reality / Virtual Reality and Expected :Home › Services › Digital Life › Augmented Reality / Virtual Reality is validated succesfully
+2019-10-03 18:05:45 INFO  LogReporter:18 - Document title is validated :Internet of Things | Reform your customer experience with IoT Data
+2019-10-03 18:05:45 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Internet of Things and Expected :Home › Services › Digital Life › Internet of Things is validated succesfully
+2019-10-03 18:05:53 INFO  LogReporter:18 - Document title is validated :RPA & ChatBOTs | Pave way for digital transformation with RPA
+2019-10-03 18:05:53 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Robotic Process Automation & ChatBOTs and Expected :Home › Services › Digital Life › Robotic Process Automation & ChatBOTs is validated succesfully
+2019-10-03 18:05:59 INFO  LogReporter:18 - Document title is validated :Blockchain | ATMECS, Inc.
+2019-10-03 18:05:59 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Blockchain and Expected :Home › Services › Digital Life › Blockchain is validated succesfully
+2019-10-03 18:06:00 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-10-03 18:06:00 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-10-03 18:06:00 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-10-03 18:06:00 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-10-03 18:06:00 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ajith.periyasamy/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-10-03 18:06:01 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-10-03 18:06:01 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-10-03 18:06:01 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-10-03 18:06:01 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-10-03 18:06:01 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ajith.periyasamy/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-10-03 18:43:48 INFO  LogReporter:18 - url is loaded
+2019-10-03 18:44:00 INFO  LogReporter:18 - Document title is validated :Home | Atmecs, Inc. | Digital Solutions & Product Engineering Services
+2019-10-03 18:44:09 INFO  LogReporter:18 - Document title is validated :Services | Atmecs, Inc. | Digital Solutions & Product Engineering Services
+2019-10-03 18:44:10 INFO  LogReporter:18 - Actual Value :Home › Services and Expected :Home › Services is validated succesfully
+2019-10-03 18:44:18 INFO  LogReporter:18 - Document title is validated :Artificial Intelligence/Machine Learing | Leap at the possibilities of AI/ML
+2019-10-03 18:44:18 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Artificial Intelligence / Machine Learning and Expected :Home › Services › Digital Life › Artificial Intelligence / Machine Learning is validated succesfully
+2019-10-03 18:44:26 INFO  LogReporter:18 - Document title is validated :Mixed Reality | We engineer the technology. You achieve the unreal.
+2019-10-03 18:44:27 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Augmented Reality / Virtual Reality and Expected :Home › Services › Digital Life › Augmented Reality / Virtual Reality is validated succesfully
+2019-10-03 18:44:34 INFO  LogReporter:18 - Document title is validated :Internet of Things | Reform your customer experience with IoT Data
+2019-10-03 18:44:34 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Internet of Things and Expected :Home › Services › Digital Life › Internet of Things is validated succesfully
+2019-10-03 18:44:41 INFO  LogReporter:18 - Document title is validated :RPA & ChatBOTs | Pave way for digital transformation with RPA
+2019-10-03 18:44:42 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Robotic Process Automation & ChatBOTs and Expected :Home › Services › Digital Life › Robotic Process Automation & ChatBOTs is validated succesfully
+2019-10-03 18:44:48 INFO  LogReporter:18 - Document title is validated :Blockchain | ATMECS, Inc.
+2019-10-03 18:44:49 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Blockchain and Expected :Home › Services › Digital Life › Blockchain is validated succesfully
+2019-10-03 18:44:55 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-10-03 18:44:55 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-10-03 18:44:55 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-10-03 18:44:55 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-10-03 18:44:55 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ajith.periyasamy/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-10-03 18:44:56 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-10-03 18:44:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-10-03 18:44:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-10-03 18:44:56 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-10-03 18:44:56 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ajith.periyasamy/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-10-03 18:47:13 INFO  LogReporter:18 - url is loaded
+2019-10-03 18:47:16 INFO  LogReporter:18 - Document title is validated :Home | Atmecs, Inc. | Digital Solutions & Product Engineering Services
+2019-10-03 18:47:24 INFO  LogReporter:18 - Document title is validated :Services | Atmecs, Inc. | Digital Solutions & Product Engineering Services
+2019-10-03 18:47:24 INFO  LogReporter:18 - Actual Value :Home › Services and Expected :Home › Services is validated succesfully
+2019-10-03 18:47:33 INFO  LogReporter:18 - Document title is validated :Artificial Intelligence/Machine Learing | Leap at the possibilities of AI/ML
+2019-10-03 18:47:33 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Artificial Intelligence / Machine Learning and Expected :Home › Services › Digital Life › Artificial Intelligence / Machine Learning is validated succesfully
+2019-10-03 18:47:41 INFO  LogReporter:18 - Document title is validated :Mixed Reality | We engineer the technology. You achieve the unreal.
+2019-10-03 18:47:41 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Augmented Reality / Virtual Reality and Expected :Home › Services › Digital Life › Augmented Reality / Virtual Reality is validated succesfully
+2019-10-03 18:47:50 INFO  LogReporter:18 - Document title is validated :Internet of Things | Reform your customer experience with IoT Data
+2019-10-03 18:47:51 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Internet of Things and Expected :Home › Services › Digital Life › Internet of Things is validated succesfully
+2019-10-03 18:47:58 INFO  LogReporter:18 - Document title is validated :RPA & ChatBOTs | Pave way for digital transformation with RPA
+2019-10-03 18:47:58 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Robotic Process Automation & ChatBOTs and Expected :Home › Services › Digital Life › Robotic Process Automation & ChatBOTs is validated succesfully
+2019-10-03 18:48:06 INFO  LogReporter:18 - Document title is validated :Blockchain | ATMECS, Inc.
+2019-10-03 18:48:07 INFO  LogReporter:18 - Actual Value :Home › Services › Digital Life › Blockchain and Expected :Home › Services › Digital Life › Blockchain is validated succesfully
+2019-10-03 18:48:11 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-10-03 18:48:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-10-03 18:48:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-10-03 18:48:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-10-03 18:48:11 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ajith.periyasamy/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-10-03 18:48:12 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-10-03 18:48:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-10-03 18:48:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-10-03 18:48:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-10-03 18:48:12 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ajith.periyasamy/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

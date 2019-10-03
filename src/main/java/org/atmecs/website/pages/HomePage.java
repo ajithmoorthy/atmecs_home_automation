@@ -1,6 +1,7 @@
 package org.atmecs.website.pages;
 
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.atmecs.website.helper.ActionHelper;
 import org.atmecs.website.helper.ValidaterHelper;
@@ -19,22 +20,27 @@ public class HomePage {
 		validate.validateTitle(driver,title2);
 		validateBread(driver, prop.getProperty("loc.linktext.breadcrumb"),bread1);
 		recurMethod(driver, prop);
+		help.scrollPage(driver,prop.getProperty("loc.btn.moreinfo1"));
 		help.clickElement(prop.getProperty("loc.btn.moreinfo1"), driver);
 		validate.validateTitle(driver, title3);
 		validateBread(driver, prop.getProperty("loc.linktext.breadcrumb"),bread2);
 		recurMethod(driver, prop);
+		help.scrollPage(driver,prop.getProperty("loc.btn.moreinfo2"));
 		help.clickElement(prop.getProperty("loc.btn.moreinfo2"), driver);
 		validate.validateTitle(driver,title4);
 		validateBread(driver, prop.getProperty("loc.linktext.breadcrumb"),bread3);
 		recurMethod(driver, prop);
+		help.scrollPage(driver,prop.getProperty("loc.btn.moreinfo3"));
 		help.clickElement(prop.getProperty("loc.btn.moreinfo3"), driver);
 		validate.validateTitle(driver,title5);
 		validateBread(driver, prop.getProperty("loc.linktext.breadcrumb"),bread4);
 		recurMethod(driver, prop);
+		help.scrollPage(driver,prop.getProperty("loc.btn.moreinfo4"));
 		help.clickElement(prop.getProperty("loc.btn.moreinfo4"), driver);
 		validate.validateTitle(driver,title6);
 		validateBread(driver, prop.getProperty("loc.linktext.breadcrumb"),bread5);
 		recurMethod(driver, prop);
+		help.scrollPage(driver,prop.getProperty("loc.btn.moreinfo5"));
 		help.clickElement(prop.getProperty("loc.btn.moreinfo5"), driver);
 		validate.validateTitle(driver,title7);
 		validateBread(driver, prop.getProperty("loc.linktext.breadcrumb"), bread6);
@@ -43,7 +49,7 @@ public class HomePage {
 		help.mouseOver(prop.getProperty("loc.linktxt.home"), driver);
 		help.clickElement(prop.getProperty("loc.linktxt.home"), driver);
 	}
-	public void validateBread(WebDriver driver,String locator,String expect){
+	public void validateBread(WebDriver driver,String locator,String expect) {
 		WebDriverWait wait2 = new WebDriverWait(driver, 20);
 		wait2.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 		String text=validate.webElementgetText(driver,locator);

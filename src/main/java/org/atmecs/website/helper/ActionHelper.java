@@ -254,7 +254,7 @@ public class ActionHelper extends Extent {
 		Select select = new Select(dropdown);
 		select.selectByIndex(index);
 	}
-	
+
 	//this the method for handle the windows in web driver
 	public WebDriver winHandler(WebDriver driver) {
 		String window_array[]=new String[5];
@@ -281,8 +281,8 @@ public class ActionHelper extends Extent {
 		sendKeys(loc_password,webdriver, input_Password);
 		clickElement(submit, webdriver);	
 	}
-	
-	
+
+
 	//this method is used to perform the mouse over with drop down selection
 	public void menuMouseOver(WebDriver webdriver,String locator,String option) {
 		Actions actions = new Actions(webdriver);
@@ -319,10 +319,10 @@ public class ActionHelper extends Extent {
 
 		}
 	}
-/**
- * scrollPage method will scroll the web page using java script
- * @param driver
- */
+	/**
+	 * scrollPage method will scroll the web page using java script
+	 * @param driver
+	 */
 	public void scrollPage(WebDriver driver,int index) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,"+index+")");
@@ -333,9 +333,11 @@ public class ActionHelper extends Extent {
 	}
 	public void scrollPage(WebDriver driver,String locator) {
 		String[] loc=locator.split(",");
-		WebElement element=driver.findElement(By.xpath(loc[1]));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, 3);
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		WebElement element = driver.findElement(By.xpath(loc[1]));  
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		scrollPage(driver, -200);
 	}
 	public void menuMouseOverClick(WebDriver webdriver,String locator) {
 		Actions actions = new Actions(webdriver);
@@ -347,5 +349,5 @@ public class ActionHelper extends Extent {
 	}
 
 
-	
+
 }
