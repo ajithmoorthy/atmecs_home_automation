@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.time.Month;
 import java.util.Date;
 import java.util.List;
-import org.atmecs.website.extentreports.Extent;
+
 import org.atmecs.website.logreports.LogReporter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,9 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import com.relevantcodes.extentreports.LogStatus;
-
-public class ValidaterHelper extends Extent{
+public class ValidaterHelper{
 	LogReporter log=new LogReporter();
 	ActionHelper helper=new ActionHelper(); 
 	//this method will check the url is correct or not
@@ -25,11 +23,11 @@ public class ValidaterHelper extends Extent{
 		try {
 			Assert.assertEquals(Driver.getCurrentUrl(),Expected_Url);
 			log.logReportMessage("Successfully Validated the correct Url is :"+ Driver.getCurrentUrl());
-			logger.log(LogStatus.INFO,"Successfully Validated the correct Url is :" +Driver.getCurrentUrl());
+			//logger.log(LogStatus.INFO,"Successfully Validated the correct Url is :" +Driver.getCurrentUrl());
 		}catch(AssertionError e) {
 			System.out.println("Navigate to wrong Webpage");
 			log.logReportMessage("Navigate to wrong Webpage");
-			logger.log(LogStatus.INFO, "Navigate to wrong Webpage");
+			//logger.log(LogStatus.INFO, "Navigate to wrong Webpage");
 		}	
 	}
 	//this method validate the page document title
@@ -37,13 +35,13 @@ public class ValidaterHelper extends Extent{
 		try {
 			Assert.assertEquals(driver.getTitle(), documentTitle);
 			log.logReportMessage("Document title is validated :"+driver.getTitle());
-			logger.log(LogStatus.INFO,"Document title is validated :" +driver.getTitle());
+			//logger.log(LogStatus.INFO,"Document title is validated :" +driver.getTitle());
 		}
 		catch(AssertionError e)
 		{
 			System.out.println("Document title is not match with Expected :"+driver.getTitle());
 			log.logReportMessage("Document title is not match with Expected :"+driver.getTitle());
-			logger.log(LogStatus.INFO,"Document title is not match with Expected :"+driver.getTitle());	
+			//logger.log(LogStatus.INFO,"Document title is not match with Expected :"+driver.getTitle());	
 		}
 	}
 	//this method will return the inner text of the web elements
@@ -77,13 +75,13 @@ public class ValidaterHelper extends Extent{
 		try {
 			Assert.assertEquals(actual,expected);
 			log.logReportMessage("Actual Value :"+actual+" and Expected :"+expected+" is validated succesfully");
-			logger.log(LogStatus.INFO,"Actual Value :"+actual+" and Expected :"+expected+" is validated succesfully");	
+			//logger.log(LogStatus.INFO,"Actual Value :"+actual+" and Expected :"+expected+" is validated succesfully");	
 		}
 		catch(AssertionError e)
 		{
 			System.out.println("Actual Value :"+actual+" not match wiht the Expected value :"+expected);
 			log.logReportMessage("Actual Value :"+actual+" not match wiht the Expected value :"+expected);
-			logger.log(LogStatus.INFO,"Actual Value :"+actual+" not match wiht the Expected value :"+expected);
+			//logger.log(LogStatus.INFO,"Actual Value :"+actual+" not match wiht the Expected value :"+expected);
 		}
 
 	}
@@ -124,7 +122,7 @@ public class ValidaterHelper extends Extent{
 					assertValidate(content, expectedcontent);
 					assertValidate(blogdate, originaldate);
 					helper.scrollPage(driver,4500);
-					logger.log(LogStatus.PASS, "Before Toast message");
+					//logger.log(LogStatus.PASS, "Before Toast message");
 					helper.clickElement(postloc, driver);
 					WebElement inputElement = driver.findElement(By.xpath(textarealoc));
 					JavascriptExecutor js = (JavascriptExecutor) driver; 
@@ -133,7 +131,7 @@ public class ValidaterHelper extends Extent{
 					if(isRequired )
 					{
 						log.logReportMessage("Toast meaasage is Displayed sucessfully");
-						logger.log(LogStatus.PASS,"Toast meaasage is Displayed succesfully");	
+						//logger.log(LogStatus.PASS,"Toast meaasage is Displayed succesfully");	
 					}
 					count++;
 					variable++;

@@ -4,21 +4,24 @@ package org.atmecs.website.helper;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
-import org.atmecs.website.extentreports.Extent;
 import org.atmecs.website.logreports.LogReporter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 /*
  * Class is created for the implement the reusablity
  * it is contains many method when ever we want we can access*/
-public class ActionHelper extends Extent {
+public class ActionHelper {
 	LogReporter log=new LogReporter();
 	By xpath,id,name,className,linkText,cssSelector,partialLink,tag;
 	/**
@@ -73,9 +76,16 @@ public class ActionHelper extends Extent {
 	 */
 	public void actionMethod(WebDriver webdriver,By locator) {
 		try {
-			WebDriverWait wait2 = new WebDriverWait(webdriver, 20);
-			wait2.until(ExpectedConditions.elementToBeClickable(locator));
-			WebElement click_operation = webdriver.findElement(locator);
+			Wait<WebDriver> wait = new FluentWait<WebDriver>(webdriver)							
+					.withTimeout(30, TimeUnit.SECONDS) 			
+					.pollingEvery(5, TimeUnit.SECONDS) 			
+					.ignoring(NoSuchElementException.class);
+			WebElement click_operation = wait.until(new Function<WebDriver, WebElement>(){
+			
+				public WebElement apply(WebDriver driver ) {
+					return driver.findElement(locator);
+				}
+			});
 			click_operation.click();
 		}catch(Exception e) {
 			System.out.println(e);
@@ -133,9 +143,16 @@ public class ActionHelper extends Extent {
 	 * @param value
 	 */
 	public void sendKeysMethod(By locator, WebDriver webdriver,String value) {
-		WebDriverWait wait2 = new WebDriverWait(webdriver, 20);
-		wait2.until(ExpectedConditions.elementToBeClickable(locator));
-		WebElement sendtext = webdriver.findElement(locator);
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(webdriver)							
+				.withTimeout(30, TimeUnit.SECONDS) 			
+				.pollingEvery(5, TimeUnit.SECONDS) 			
+				.ignoring(NoSuchElementException.class);
+		WebElement sendtext = wait.until(new Function<WebDriver, WebElement>(){
+		
+			public WebElement apply(WebDriver driver ) {
+				return driver.findElement(locator);
+			}
+		});
 		sendtext.sendKeys(value);
 	}
 	/**
@@ -190,9 +207,16 @@ public class ActionHelper extends Extent {
 	 */
 	public void mouseOverMethod(By locator,WebDriver webdriver) {
 		Actions actions = new Actions(webdriver);
-		WebDriverWait wait2 = new WebDriverWait(webdriver, 20);
-		wait2.until(ExpectedConditions.elementToBeClickable(locator));
-		WebElement element=webdriver.findElement(locator);
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(webdriver)							
+				.withTimeout(30, TimeUnit.SECONDS) 			
+				.pollingEvery(5, TimeUnit.SECONDS) 			
+				.ignoring(NoSuchElementException.class);
+		WebElement element = wait.until(new Function<WebDriver, WebElement>(){
+		
+			public WebElement apply(WebDriver driver ) {
+				return driver.findElement(locator);
+			}
+		});
 		actions.moveToElement(element).perform();
 	}
 	/**
@@ -248,9 +272,16 @@ public class ActionHelper extends Extent {
 	 * @return
 	 */
 	public void dropDownMethod(By locators, WebDriver webdriver, int index) {
-		WebDriverWait wait2 = new WebDriverWait(webdriver, 20);
-		wait2.until(ExpectedConditions.elementToBeClickable(locators));
-		WebElement dropdown = webdriver.findElement(locators);
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(webdriver)							
+				.withTimeout(30, TimeUnit.SECONDS) 			
+				.pollingEvery(5, TimeUnit.SECONDS) 			
+				.ignoring(NoSuchElementException.class);
+		WebElement dropdown = wait.until(new Function<WebDriver, WebElement>(){
+		
+			public WebElement apply(WebDriver driver ) {
+				return driver.findElement(locators);
+			}
+		});
 		Select select = new Select(dropdown);
 		select.selectByIndex(index);
 	}
@@ -331,9 +362,8 @@ public class ActionHelper extends Extent {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,10000)");
 	}
-	public void scrollPage(WebDriver driver,String locator) {
+	public void scrollPage(WebDriver driver,String locator){
 		String[] loc=locator.split(",");
-		WebDriverWait wait = new WebDriverWait(driver, 3);
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		WebElement element = driver.findElement(By.xpath(loc[1]));  
 		js.executeScript("arguments[0].scrollIntoView(true);", element);

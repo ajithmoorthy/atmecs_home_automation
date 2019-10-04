@@ -5,9 +5,9 @@ import java.net.URL;
 import java.util.Properties;
 
 import org.atmecs.website.constants.FileConstants;
-import org.atmecs.website.extentreports.Extent;
 import org.atmecs.website.logreports.LogReporter;
 import org.atmecs.website.utils.PropertiesReader;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -16,9 +16,11 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 /*this class will act as the base class for the test it will provide the browser based on the user choice */
-public class TestBase extends Extent{
+public class TestBase {
+	public static WebDriver driver;
     protected Properties prop=null;
 	PropertiesReader propertyReader = new PropertiesReader();
 	LogReporter log=new LogReporter();
@@ -73,7 +75,9 @@ public class TestBase extends Extent{
 				break;
 			case "IE":
 				DesiredCapabilities capabilities = new DesiredCapabilities();
-				capabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, "");
+				capabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, prop.getProperty("url"));
+				capabilities.setCapability("requireWindowFocus", true);
+				capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
 				capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
 				System.setProperty("webdriver.ie.driver", FileConstants.IE_DRIVER_PATH);
 				driver=new InternetExplorerDriver(capabilities);
@@ -86,5 +90,11 @@ public class TestBase extends Extent{
 			driver.get(prop.getProperty("url"));
 			log.logReportMessage("url is loaded");
 		}
+		
+	}
+	@AfterTest
+	public void end() {
+		driver.quit();
+		
 	}
 	}

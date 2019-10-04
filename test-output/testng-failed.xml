@@ -5,11 +5,9 @@
     <classes>
       <class name="org.atmecs.website.testscripts.Home">
         <methods>
+          <include name="end"/>
           <include name="baseSetup"/>
-          <include name="homeValidation" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
+          <include name="homeValidation" invocation-numbers="0 1 2 3 4"/>
         </methods>
       </class> <!-- org.atmecs.website.testscripts.Home -->
     </classes>
